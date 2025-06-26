@@ -7,10 +7,10 @@ const dataset = process.env.NEXT_PUBLIC_SANITY_DATASET!;
 const apiVersion = '2024-01-01';
 
 export const client = createClient({
-    projectId,
-    dataset,
-    apiVersion,
-    useCdn: true,
+  projectId,
+  dataset,
+  apiVersion,
+  useCdn: true,
 });
 
 
@@ -38,6 +38,7 @@ const detailFields = `
   publishedAt,
   githubLink,
   publishedLink,
+  paperLink,
   "tags": categories[]->title,
   body[]{
   ...,
@@ -52,11 +53,11 @@ const detailFields = `
 
 // Function to fetch all projects for the main listing page
 export async function getProjects() {
-    // NOTE: Your query used _type == 'post'. I'm using 'project' as per our goal.
-    // Change this to 'post' if that's what you named your project schema.
-    const query = `*[_type == "post"] { ${cardFields} }`;
-    // console.log('Fetching projects with query:', query);
-    return client.fetch(query);
+  // NOTE: Your query used _type == 'post'. I'm using 'project' as per our goal.
+  // Change this to 'post' if that's what you named your project schema.
+  const query = `*[_type == "post"] { ${cardFields} }`;
+  // console.log('Fetching projects with query:', query);
+  return client.fetch(query);
 }
 
 
@@ -65,21 +66,21 @@ export async function getProjects() {
 
 // Function to fetch all research papers for the listing page
 export async function getResearchPapers() {
-    const query = `*[_type == "research"] | order(publishedAt desc) { ${cardFields} }`;
-    return client.fetch(query);
+  const query = `*[_type == "research"] | order(publishedAt desc) { ${cardFields} }`;
+  return client.fetch(query);
 }
 
 // Function to fetch ONE specific project for its detail page
 export async function getSingleProject(slug: string) {
-    // Change _type to 'post' if needed
-    const query = `*[_type == "post" && slug.current == $slug][0] { ${detailFields} }`;
-    return client.fetch(query, { slug });
+  // Change _type to 'post' if needed
+  const query = `*[_type == "post" && slug.current == $slug][0] { ${detailFields} }`;
+  return client.fetch(query, { slug });
 }
 
 // Function to fetch ONE specific research paper for its detail page
 export async function getSingleResearchPaper(slug: string) {
-    const query = `*[_type == "research" && slug.current == $slug][0] { ${detailFields} }`;
-    return client.fetch(query, { slug });
+  const query = `*[_type == "research" && slug.current == $slug][0] { ${detailFields} }`;
+  return client.fetch(query, { slug });
 }
 
 
@@ -89,7 +90,7 @@ export async function getSingleResearchPaper(slug: string) {
 
 // A query to fetch the latest 4 items from each content type
 export async function getLatestWork() {
-    const query = `
+  const query = `
     {
       "projects": *[_type == "post"] | order(_publishedAt desc)[0...4] {
         _id,
@@ -109,5 +110,5 @@ export async function getLatestWork() {
       },
     }
   `;
-    return client.fetch(query);
+  return client.fetch(query);
 }

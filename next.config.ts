@@ -18,13 +18,14 @@ const nextConfig: NextConfig = {
       },
       { hostname: "images.unsplash.com" },
       { hostname: "images-na.ssl-images-amazon.com" },
+      { hostname: "upload.wikimedia.org" },
       { hostname: "m.media-amazon.com" },
       { hostname: "cdn.sanity.io" },
       { hostname: "cdn.simpleicons.org" },
       { hostname: "cdn.myanimelist.net" }
     ]
   },
-    typescript: {
+  typescript: {
     ignoreBuildErrors: true, // ✅ disables type checking on build
   },
   eslint: {

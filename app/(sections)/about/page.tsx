@@ -85,14 +85,14 @@ const educationData = [
 
 const bookRecommendations = [
   {
-    title: "Project Hail Mary",
+    title: "Tuesdays with Morrie",
     imageUrl:
-      "https://images-na.ssl-images-amazon.com/images/S/compressed.photo.goodreads.com/books/1603233524l/54493401.jpg",
+      "https://m.media-amazon.com/images/I/314D1ycrRkL._SY445_SX342_.jpg",
   },
   {
-    title: "Sapiens",
+    title: "Building a Second Brain",
     imageUrl:
-      "https://images-na.ssl-images-amazon.com/images/S/compressed.photo.goodreads.com/books/1420585954l/23692271.jpg",
+      "https://m.media-amazon.com/images/I/4112+RuCgeL._SY445_SX342_.jpg",
   },
   {
     title: "Atomic Habits",
@@ -100,14 +100,22 @@ const bookRecommendations = [
       "https://images-na.ssl-images-amazon.com/images/S/compressed.photo.goodreads.com/books/1655988385l/40121378.jpg",
   },
   {
-    title: "Dune",
-    imageUrl:
-      "https://images-na.ssl-images-amazon.com/images/S/compressed.photo.goodreads.com/books/1555447414l/44767458.jpg",
+    title: "The Four Agreements",
+    imageUrl: "https://m.media-amazon.com/images/I/91AfEwKjDgL._SY425_.jpg",
   },
   {
-    title: "The Three-Body Problem",
+    title: "Discipline is Destiny",
+    imageUrl: "https://m.media-amazon.com/images/I/81++i4JY0GL._SY466_.jpg",
+  },
+  {
+    title: "The Alchemist",
     imageUrl:
-      "https://images-na.ssl-images-amazon.com/images/S/compressed.photo.goodreads.com/books/1415428227l/20518872.jpg",
+      "https://m.media-amazon.com/images/I/41ziEX0PJgL._SY445_SX342_.jpg",
+  },
+  {
+    title: "Hooked",
+    imageUrl:
+      "https://m.media-amazon.com/images/I/51DlnjccG-L._SY445_SX342_.jpg",
   },
 ];
 
@@ -117,27 +125,29 @@ const mediaRecommendations = [
     imageUrl: "https://cdn.myanimelist.net/images/anime/10/47347.jpg",
   },
   {
-    title: "Steins;Gate",
-    imageUrl: "https://cdn.myanimelist.net/images/anime/11/49227.jpg",
-  },
-  {
-    title: "Vinland Saga",
-    imageUrl: "https://cdn.myanimelist.net/images/anime/1500/134432.jpg",
-  },
-  {
-    title: "Interstellar",
+    title: "Death Note",
     imageUrl:
-      "https://m.media-amazon.com/images/M/MV5BZjdkOTU3MDYtN2IxOS00OGEyLWFmMjktY2FiMmZkNWIyODZiXkEyXkFqcGdeQXVyMTMxODk2OTU@._V1_FMjpg_UX1000_.jpg",
+      "https://upload.wikimedia.org/wikipedia/en/6/6f/Death_Note_Vol_1.jpg",
   },
   {
-    title: "Blade Runner 2049",
+    title: "5 Cms per Second",
     imageUrl:
-      "https://m.media-amazon.com/images/M/MV5BNzA1Njg4NzYxOV5BMl5BanBnXkFtZTgwODk5NjU3MzI@._V1_FMjpg_UX1000_.jpg",
+      "https://upload.wikimedia.org/wikipedia/en/9/92/5_Centimeters_Per_Second.jpg",
   },
   {
-    title: "Arrival",
+    title: "Garden of Words",
     imageUrl:
-      "https://m.media-amazon.com/images/M/MV5BMTExMzU0ODcxNDheQTJeQWpwZ15BbWU4MDE1OTI4MzAy._V1_FMjpg_UX1000_.jpg",
+      "https://upload.wikimedia.org/wikipedia/en/c/c3/Garden_of_Words_poster.png",
+  },
+  {
+    title: "I Wanna Eat Your Pancreas",
+    imageUrl:
+      "https://upload.wikimedia.org/wikipedia/en/2/2a/I_Want_to_Eat_Your_Pancreas_anime_film_poster.jpg",
+  },
+  {
+    title: "A Silent Voice",
+    imageUrl:
+      "https://upload.wikimedia.org/wikipedia/en/3/32/A_Silent_Voice_Film_Poster.jpg",
   },
   {
     title: "Jujutsu Kaisen",
